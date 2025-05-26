@@ -42,7 +42,7 @@
                          <a href="./posts.php">View All Posts</a>
                      </li>
                      <li>
-                         <a href="#">Add Post</a>
+                         <a href="posts.php?source=add_post">Add Post</a>
                      </li>
                  </ul>
              </li>
@@ -65,7 +65,7 @@
                      </li>
                  </ul>
              </li>
-               <li>
+             <li>
                  <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Profile</a>
              </li>
          </ul>
