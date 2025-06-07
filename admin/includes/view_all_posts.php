@@ -44,9 +44,8 @@
             while ($row = mysqli_fetch_assoc($select_categories_edit)) {
                 $cat_id = $row["cat_id"];
                 $cat_title = $row["cat_title"];
-                
-            echo "<td>{$cat_title}</td>";
 
+                echo "<td>{$cat_title}</td>";
             }
 
 
@@ -77,5 +76,6 @@ if (isset($_GET['delete'])) {
     $the_post_id = $_GET['delete'];
     $query = "DELETE FROM posts WHERE post_id ={$the_post_id} ";
     $delete_query = mysqli_query($connection, $query);
+    header("Location: posts.php");
 }
 ?>
